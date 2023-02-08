@@ -1,0 +1,114 @@
+.Aprovacoes {
+    padding: 2rem;
+    height: 100vh;
+    font-size: 12px;
+    overflow-y: scroll;
+}
+
+
+.aprovacaoBody {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.AprovacaoItemTitulo span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+
+.TabChamadoTituloAprovacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    
+}
+
+.TabChamadoTituloAprovacoes span {
+    width: 1rem;
+    height: 1rem;
+    background-color: #f0ad4e;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.TabChamadoTituloAprovacoes h2 {
+    margin: 0 !important;
+    font-family: var(--Fonte);
+    font-size: 20px;
+}
+
+
+.accordion{
+    margin-bottom: 1.3rem;
+}
+
+.accordion-header button {
+    font-family: var(--Fonte);
+}
+
+.accordion-header button div {
+    font-family: var(--Fonte);
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:rgb(67, 66, 66)
+}
+
+.accordion-header button div svg{
+    margin-right: 0.2rem;
+}
+
+
+.AprovacaoItemList span {
+    font-family: var(--Fonte);
+}
+
+@media (max-width: 800px) {
+    .Aprovacoes {
+        padding: 10px;
+        height: 100vh;
+    }
+
+
+    .TabChamadoTituloAprovacoes {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+.TitleLista {
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.BodyButton {
+    margin-right: 5px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    font-family: var(--Fonte) !important; 
+    font-size: 12px !important;
+}
+
+.UsuarioNaoAprovadoIcone{
+    color: #d9534f;
+}
+
+.UsuarioAprovadoIcone{
+    color: #5cb85c;
+}
+
+.UsuarioPendenteIcone{
+    color: #f0ad4e;
+}

@@ -1,0 +1,157 @@
+.Chamados {
+  height: 100vh;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.Chamados h2 {
+  font-family: var(--Fonte);
+  margin: 0 !important;
+}
+
+
+.Filtros {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+
+
+.BreadcrumbList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+
+.BreadcrumbList span {
+  font-family: var(--Fonte);
+  color: var(--AzulTexto);
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+
+.BreadcrumbList span a {
+  font-family: var(--Fonte);
+  color: var(--AzulTexto);
+  cursor: pointer;
+  margin-right: 0.4rem;
+  text-decoration: none;
+}
+
+.BreadcrumbList svg {
+
+  margin-right: 0.4rem;
+  text-decoration: none;
+}
+
+.BreadcrumbList span:hover {
+  color: var(--AzulTexto);
+  text-decoration: underline;
+}
+
+
+.FiltroTextoInput {
+  border: 1px solid var(--InputBorderColor);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  margin: 0 !important;
+}
+
+.css-qc6sy-singleValue {
+  font-family: var(--Fonte);
+  font-size: 13px;
+}
+
+.FiltrosSm {
+  display: none;
+}
+
+
+.TabChamadoTitulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.TabChamadoTitulo span {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--CirculoTitulos);
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.TabChamadoTitulo h2 {
+  margin: 0 !important;
+  font-family: var(--Fonte);
+}
+
+@media (max-width: 800px) {
+
+  .BreadcrumbList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    font-size: 12px;
+  }
+
+
+  .TabChamadoTitulo span {
+    display: none;
+
+  }
+
+
+  .TabChamadoTitulo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .FiltroTextoInput {
+    width: 100%;
+    padding: 8px 20px !important;
+  }
+
+
+  .Filtros {
+    display: none;
+  }
+
+
+  .FiltrosSm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .FiltrosSmSelects {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .Chamados h2 {
+    font-family: var(--Fonte);
+
+  }
+
+
+}

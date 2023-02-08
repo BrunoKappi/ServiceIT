@@ -1,0 +1,9 @@
+.AtribuidosAMim {
+  height: 100vh;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.AtribuidosAMim h2 {
+  font-family: var(--Fonte);
+}

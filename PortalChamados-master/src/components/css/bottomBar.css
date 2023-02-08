@@ -1,0 +1,25 @@
+.bottomList {
+    list-style-type: none;
+    padding: .7rem;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--FundoAzul);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1 !important;
+
+}
+
+.bottomList li {
+    margin: 0 20px;
+}
+
+.botomBarIcon {
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+@media (max-height: 700px) {}

@@ -1,0 +1,203 @@
+.DivCadastroForm {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150vh;
+    padding-bottom: 100px;
+}
+
+.CadastroForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 50px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    padding-top: 1rem;
+}
+
+.CadastroForm h1 {
+    font-family: var(--Fonte);
+    text-align: center;
+}
+
+.formContainerCadastro {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+
+.CadastroInput {
+    padding: 9px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    font-family: var(--Fonte);
+}
+
+.ColunaDoubleRow {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 5px;
+
+}
+
+
+.EmpresaRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.NascimentoSelect {
+    flex-grow: 2;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.EmpresaInput {
+    margin-right: 0;
+}
+
+.DoubleColumnCadastro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ColunaDoubleRow input {
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.alertaAprovacao {
+    color: #f0ad4e;
+    font-weight: 800;
+}
+
+.Select {
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+
+.DoubleColumn input {
+    margin-top: 10px;
+}
+
+.CadastroSelect {
+    padding: 9px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    font-family: var(--Fonte);
+}
+
+.CadastroButton {
+    background-color: var(--VerdeBotao);
+    /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    min-height: 40px;
+    margin-top: 20px;
+
+}
+
+.CadastroButton:disabled {
+    cursor: not-allowed;
+}
+
+.InputLabelProfile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: dodgerblue;
+    font-family: var(--Fonte);
+    font-weight: 400;
+    gap: 3px;
+}
+
+.BackLogout {
+    margin-top: 15px;
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.NomeCompleto {
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+
+    .formContainerCadastro {
+        width: 100%;
+        -webkit-box-shadow: 0px 0px 23px -188px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 23px -188px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 23px -188px rgba(0, 0, 0, 0.75);
+    }
+
+    .CadastroForm {
+        padding: 0;
+        width: 90%;
+    }
+
+    .BackLogout {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    .NomeCompleto {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+        width: 100%;
+    }
+
+    .DivCadastroForm {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .DoubleColumn {
+        flex-direction: column;
+    }
+
+    .CadastroInput {
+        margin-bottom: 20px;
+    }
+
+    .NascimentoSelect {
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    .CadastroForm label {
+        margin-top: 5px;
+    }
+
+
+}

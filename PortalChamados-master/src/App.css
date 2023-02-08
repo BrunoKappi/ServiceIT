@@ -1,0 +1,59 @@
+:root {
+    --AzulTexto: #0275d8;
+    --VermelhoTexto: #df4759;
+    --TextoBotao: #fff;
+    --TextoInformacao: darkgray;
+    --TextoEscuro: rgb(54, 54, 54);
+
+    --FundoAzul: #0275d8;
+    --FundoEscuro: #292b2c;
+    --VerdeBotao: #4CAF50;
+    --InputBorderColor: #ccc;
+    --BackGroundColorTelas: whitesmoke;
+    --FundoCenariosHeader :#f0ad4e;
+
+    --CirculoTitulos: #f0ad4e;
+
+    --EmAndamento: #F9CA47;
+    --Aberto: #42AADA;
+    --Concluido: #55c639;
+    --Cancelado: #df4759; 
+    --FundoBody: ;
+    --Fonte: 'Kanit', sans-serif;
+
+    --TextoCabecalhoTabela: white;
+    --LinhasTabela: #d0e1f3;
+
+    --FundoTransparente: transparent;
+}
+
+
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family:  var(--Fonte);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    background-color: var(--BackGroundColorTelas);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+
+* {
+    font-family: Oswald;
+}

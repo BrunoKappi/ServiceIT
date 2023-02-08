@@ -1,0 +1,936 @@
+.Chamado {
+  height: 100%;
+  padding: 1.5rem;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.ChamadoFooter {
+  height: 100px;
+  width: 100%;
+}
+
+
+.ColunaChamado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0.1rem;
+  padding-top: 0;
+}
+
+.ChamadoLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  min-height: 80%;
+}
+
+.ChamadoBody {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: white;
+}
+
+.EnviarMensagem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.EnviarMensagem form {
+  width: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.ComentarioStatusForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 00.5rem;
+  gap: 0.5rem;
+}
+
+.ComentarioStatusForm textarea {
+  width: 100%;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  min-height: 3rem;
+  padding: 0.5rem 0.3rem;
+}
+
+
+.ComentarioStatusForm button {
+  padding: 5px 25px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  outline: none;
+  background-color: var(--VerdeBotao);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1rem;
+  -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  justify-content: center;
+}
+
+
+.AlertaResponsavelDiv button {
+  padding: 5px 25px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  outline: none;
+  background-color: var(--VerdeBotao);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1rem;
+  -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  justify-content: center;
+}
+
+
+.ChamadoStatusSelect select {
+  padding: 00.3rem 0.3rem;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.ChamadoStatusSelect select optgroup {
+  padding: 00.3rem 0.3rem;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+option {
+  font-family: var(--Fonte);
+  font-size: 12px;
+}
+
+.EnviarMensagem form input {
+  flex-grow: 1;
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  outline: none;
+  -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+}
+
+.EnviarMensagem form button {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  outline: none;
+  background-color: var(--VerdeBotao);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1rem;
+  -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+}
+
+.EnviarMensagem form>svg {
+  color: var(--FundoEscuro);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ChamadoWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+
+
+.AnexoLabelMensagem input {
+  display: none;
+  cursor: pointer;
+}
+
+.AnexoLabelMensagem {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--FundoEscuro);
+  margin-top: 5px;
+  font-family: var(--Fonte);
+}
+
+.AnexoLabelMensagem span {
+  font-size: 1rem;
+}
+
+.AnexoLabelMensagem svg {
+  font-size: 1rem;
+}
+
+.ChamadoHeader {
+  font-family: var(--Fonte);
+  background-color: var(--FundoEscuro);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 12px;
+  justify-content: space-between;
+
+}
+
+.ChamadoHeader span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.ChamadoHeader .BarraDeProgressoMensagem {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  flex-grow: 1 !important;
+  cursor: pointer;
+
+}
+
+.BarraDeProgressoMensagem {
+
+  flex-grow: 2;
+
+  margin-right: 1rem;
+}
+
+
+.ChamadoStatusSelect {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.css-b62m3t-container * {
+  font-family: var(--Fonte) !important;
+}
+
+.ChamadoStatusBall {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+
+
+
+.ChamadoStatusSelect select {
+  flex-grow: 1;
+}
+
+.AlertaSemResponsavel {
+  font-family: var(--Fonte);
+  font-size: 13px;
+  -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+
+
+.AlertaResponsavelDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+
+.ChamadoAside {
+  min-width: 35%;
+  max-width: 35%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ChamadoStatusBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ChamadoStatusBody span {
+  font-family: var(--Fonte);
+
+}
+
+
+.ChamadoStatusHeader {
+  font-family: var(--Fonte);
+  background-color: var(--FundoEscuro);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 12px;
+}
+
+.ChamadoStatusHeader span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.ChamadoResponsavelBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0rem;
+}
+
+.ChamadoFluxoBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 3rem;
+}
+
+.ChamadoFluxoBody span {
+  font-family: var(--Fonte);
+}
+
+
+.FluxoEtapa {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4% 35% 31% 30%;
+  font-family: var(--Fonte);
+  font-size: 12px;
+  padding: 0.1rem;
+  padding-bottom: .2rem;
+  padding-top: .2rem;
+  font-weight: 500;
+}
+
+.ChamadoFluxoBody div:nth-child(even) {
+  background-color: #d0e1f3;
+}
+
+.FluxoTabelaHeader {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4% 35% 31% 30%;
+  font-weight: 600;
+}
+
+.FluxoTabelaHeader span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  border-bottom: 1px solid var(--FundoEscuro);
+  padding-bottom: 0.1rem;
+
+}
+
+.ChamadoFluxoHeader {
+  font-family: var(--Fonte);
+  background-color: var(--FundoEscuro);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 12px;
+}
+
+.ChamadoFluxoHeader span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+
+.ChamadoFluxoHeader svg {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ChamadoStatusHeader svg {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ChamadoResponsavelHeader svg {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ChamadoResponsavelHeader span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+
+.ChamadoFluxoHeader svg {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ChamadoResponsavelHeader {
+  font-family: var(--Fonte);
+  background-color: var(--FundoEscuro);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ChamadoDescBody {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ChamadoDescBody span {
+  font-family: var(--Fonte);
+
+}
+
+
+
+.ChamadoDescHeader {
+  font-family: var(--Fonte);
+  background-color: var(--FundoEscuro);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 12px;
+}
+
+
+.ChamadoDescHeader svg {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ChamadoDescHeader span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.ChamadoDescBodyRow {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 12px;
+  margin-bottom: 0.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  word-wrap: normal
+}
+
+.ChamadoDescBodyRow svg {
+  margin-right: 5px;
+  color: var(--AzulTexto);
+}
+
+.EtapaSpan svg {
+  font-size: 14px;
+  margin-left: 0.2rem;
+}
+
+.EtapaSpan .EtapaPendente {
+  color: #d9534f;
+}
+
+.EtapaSpan .EtapaAndamento {
+  color: #f0ad4e;
+}
+
+.EtapaSpan .EtapaCompleta {
+  color: #5cb85c;
+}
+
+.DescTituloBodyRow {
+  margin-right: 5px;
+  color: var(--AzulTexto);
+  font-family: var(--Fonte);
+}
+
+.DescTextoBodyRow {
+  font-family: var(--Fonte);
+  color: rgb(54, 54, 54);
+  text-align: justify;
+  word-break: break-all;
+}
+
+.DescTextoBodyRow a {
+  font-family: var(--Fonte);
+  text-decoration: underline;
+}
+
+
+.LinkArquivoAnexo {
+  font-family: var(--Fonte);
+  text-decoration: underline;
+  color: white;
+}
+
+.LinkArquivoAnexo:hover {
+  font-weight: 700;
+  color: white;
+}
+
+
+.ImagemAnexoMensagem {
+
+  max-height: 6rem;
+  max-width: 20rem;
+  border-radius: 5px;
+}
+
+.Mensagens {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 13rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+}
+
+
+.Mensagem {
+  border: none;
+  padding: 0.4rem 1rem;
+  background-color: var(--AzulTexto);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: 10px 10px 10px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 10px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px -9px rgba(0, 0, 0, 0.75);
+  max-width: 65%;
+}
+
+.ChamadoMensagem {
+  margin-bottom: 0.2rem;
+  font-size: 10px !important;
+}
+
+
+.ChamadoMensagemImagem {
+  margin-bottom: 0.2rem;
+  font-size: 10px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.Mensagem span {
+  font-family: var(--Fonte);
+  font-size: 12px;
+  color: white;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.ChamadoData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .1rem;
+}
+
+
+.ChamadoData span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.ChamadoAutorNome span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 10px;
+}
+
+.ChamadoAutorNome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .1rem;
+  font-size: 10px;
+  padding-top: 0.1rem;
+
+}
+
+.ChamadoData svg {
+  color: white;
+  font-size: 10px;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 32px solid transparent;
+  border-left-color: #00aabb;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -16px;
+  margin-right: -32px;
+}
+
+.MyMessage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+.OtherMessage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.MyMessage:hover .TrashDeleteMessage {
+  display: block;
+}
+
+.TrashDeleteMessage {
+  display: none;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--AzulTexto);
+  font-size: 13px !important;
+  cursor: pointer;
+}
+
+.MyMessage .Mensagem {
+  padding-left: 2rem;
+}
+
+.Mensagem>div {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.MyMessage>svg {
+  color: var(--AzulTexto);
+  margin-left: 0.1rem;
+  font-size: 14px;
+}
+
+
+
+.Chamado .BreadcrumbList svg:last-child {
+  font-size: 25px;
+  position: fixed;
+  right: 1rem;
+}
+
+.BreadcrumbList svg {
+  color: var(--AzulTexto);
+}
+
+.ChamadoHeader svg {
+  font-size: 20px;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .Chamado {
+    height: auto;
+    padding: 0.5rem;
+  }
+
+
+  .Chamado .BreadcrumbList {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .ImagemAnexoMensagem {
+
+    max-height:min-content ;
+    max-width:6rem;
+    border-radius: 5px;
+  }
+
+
+
+  .ChamadoWrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 100%;
+  }
+
+  .ChamadoLayout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    border-top-right-radius: 0;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 1rem;
+    box-shadow: none;
+
+  }
+
+  .ChamadoAside {
+    width: 100% !important;
+    flex-grow: 1;
+    min-width: none;
+    max-width: none;
+  }
+
+  .ChamadoFluxoBody {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+  .ChamadoBody {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+
+  }
+
+
+  .FluxoTabelaHeader span {
+
+    font-size: 10px;
+
+  }
+
+
+
+  .FluxoEtapa {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9% 35% 28% 28%;
+    font-family: var(--Fonte);
+    font-size: 12px;
+    padding: 0.1rem;
+    padding-bottom: .2rem;
+    padding-top: .2rem;
+    font-weight: 500;
+  }
+
+  .FluxoTabelaHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9% 35% 28% 28%;
+    font-weight: 600;
+  }
+
+}

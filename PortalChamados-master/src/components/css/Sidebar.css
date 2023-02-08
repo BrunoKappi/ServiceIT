@@ -1,0 +1,208 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 260px;
+    background-color: #0275d8;
+    font-family: var(--Fonte);
+    position: relative;
+    -webkit-box-shadow: 6px 4px 33px -17px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 6px 4px 33px -17px rgba(0, 0, 0, 1);
+    box-shadow: 6px 4px 33px -17px rgba(0, 0, 0, 1);
+
+}
+
+.UnActive {
+    display: none;
+    flex-basis: 50px;
+}
+
+.sidebarLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .Sidebar {
+        height: 1300px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .Sidebar {
+
+        display: none;
+
+    }
+
+    .Sidebar li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Sidebar li a {
+        margin: 2px;
+        padding: 0;
+    }
+
+    #PerfilLI {
+        display: none;
+    }
+
+
+}
+
+
+.Sidebar nav {
+    flex: 1;
+}
+
+
+.RefreshButtonFixed {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.RefreshButtonFixed:active {
+    bottom: .9rem;
+    left: 1.1rem;
+}
+
+.RefreshButtonFixed button {
+    background-color: var(--VerdeBotao);
+    border: none;
+    width: 1, 5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 0.2rem;
+    -webkit-box-shadow: 10px 3px 7px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 3px 7px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 3px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.RefreshButtonFixed button:hover span {
+    width: 6rem;
+    transition: width 0.5s;
+}
+
+.RefreshButtonFixed button span {
+    width: 0;
+    overflow: hidden;
+}
+
+.RefreshButtonFixed span {
+    color: #FFF;
+    font-size: .7rem;
+    font-family: var(--Fonte);
+}
+.RefreshButtonFixed svg {
+    color: #FFF;
+    font-size: .7rem;
+    font-family: var(--Fonte);
+}
+
+
+.Sidebar ul {
+    list-style: none;
+    padding: 0px;
+    padding-top: 1rem;
+
+}
+
+.Sidebar li {
+    display: flex;
+    align-items: center;
+    padding-right: 0.8rem;
+
+}
+
+
+
+.Sidebar li a {
+    flex: 1;
+    text-decoration: none;
+    color: #FFF;
+    font-size: .7rem;
+    font-family: var(--Fonte);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.TextoLink {
+    flex-grow: 1;
+    font-family: var(--Fonte);
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Sidebar li a svg {
+    color: #FFF;
+    font-size: 0.9rem;
+}
+
+
+.Sidebar li a:hover {
+    background-color: #00000030;
+}
+
+
+.SidebarLinkActive {
+    background-color: #00000030;
+}
+
+
+.SidebarLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.TextoLink span:nth-child(1) {
+    flex-grow: 3;
+    font-family: var(--Fonte);
+}
+
+.BadgeNumber {
+    padding-right: 00.3rem;
+    padding-left: 00.3rem;
+    background-color: #3a3c3d;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: 0.7rem;
+    font-family: var(--Fonte);
+}
+
+.BadgeNumber span {
+    font-family: var(--Fonte);
+    color: white;
+}
