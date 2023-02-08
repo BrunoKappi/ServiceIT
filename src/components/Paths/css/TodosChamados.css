@@ -1,0 +1,19 @@
+.TodosChamados {
+  height: 100vh;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.TodosChamados h2 {
+  font-family: var(--Fonte);
+}
+
+
+@media (max-width: 800px) {
+
+  .TodosChamados {
+    padding: 0.7rem;
+  }
+
+
+}

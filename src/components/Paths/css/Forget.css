@@ -1,0 +1,46 @@
+.RegisterForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Header {
+    font-size: 30px;
+    font-family: var(--Fonte);
+    text-decoration: none;
+    color: #5c5c5c
+}
+
+.ForgetInput {
+    padding: 9px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    min-width: 18rem;
+}
+
+
+
+.DivRegisterForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.Link {
+    color: #757575;
+    text-decoration: none;
+}
+
+.Erro {
+    color: var(--Concluido);
+    font-weight: 700;
+}

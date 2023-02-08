@@ -1,0 +1,52 @@
+.Layout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.bottomSidebar {
+    display: none;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .Layout {
+        flex-direction: column;
+    }
+
+    .regularSidebar {
+        display: none;
+    }
+
+    .bottomSidebar {
+        display: block;
+        position: sticky;
+        bottom: 0;
+        -webkit-box-shadow: 0px -8px 41px -17px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px -8px 41px -17px rgba(0, 0, 0, 1);
+        box-shadow: 0px -8px 41px -17px rgba(0, 0, 0, 1);
+        overflow: hidden;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+}
+
+.OuterLayout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.Content {
+    background-color: var(--BackGroundColorTelas);
+    width: 100%;
+    height: 100%;
+}

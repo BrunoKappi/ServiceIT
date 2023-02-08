@@ -1,0 +1,151 @@
+.Categorias {
+  height: 95vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 500px;
+  overflow-y: scroll;
+}
+
+.Categorias h2 {
+  font-family: var(--Fonte);
+}
+
+
+.Categorias .list-group {
+  min-width: 300px !important;
+  -webkit-box-shadow: 7px 9px 28px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 9px 28px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 9px 28px -14px rgba(0, 0, 0, 0.75);
+}
+
+.CategoriaListItem input {
+  padding: 4px 12px;
+  border: none;
+  outline: none;
+  font-family: var(--Fonte);
+  color: var(--TextoEscuro);
+  font-size: 14px;
+  background-color: var(--FundoTransparente);  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.MiniSub {
+  font-family: var(--Fonte);
+  font-size: 9px;
+  margin-left: 0.3rem;
+}
+
+.CategoriaListItem span {
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.CategoriaListItem button {
+  border: none;
+  background-color: var(--FundoTransparente);
+  padding: 5px;
+}
+
+.CategoriaListItem form button svg {
+  color: var(--TextoEscuro) !important;
+}
+
+.CategoriaEditIcon {
+  color: var(--TextoEscuro) !important;
+}
+
+
+.InputChangeCategoryName {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: var(--Fonte) !important;
+  font-size: 13px !important;
+  margin-right: 1rem !important;
+}
+
+
+.ListGroupConfiguracoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  margin-top: 2rem;
+  gap: 1rem;
+
+}
+
+
+
+
+.CeneariosListGrouItemTitulo {
+  z-index: 0 !important;
+  background-color: var(--FundoCenariosHeader) !important;
+  border-color: var(--FundoCenariosHeader) !important;
+}
+
+.UrgenciaListGrouItemTitulo {
+  z-index: 0 !important;
+  background-color: var(--FundoEscuro) !important;
+  border-color: var(--FundoEscuro) !important;
+}
+
+.CenariosUrgencias {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.CategoriasESub {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+  .ListGroupConfiguracoes {
+    flex-direction: column;
+  }
+
+
+
+  .CenariosUrgencias {
+    flex-direction: column;
+
+  }
+
+  .CategoriasESub {
+    flex-direction: column;
+  }
+
+  .Categorias {
+
+    padding: 0.5rem;
+
+  }
+
+
+}
+
+
+
+.list-group-item {
+  font-family: var(--Fonte) !important;
+}

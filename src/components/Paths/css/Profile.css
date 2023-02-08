@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;700&display=swap');
+
+
+.NomeTitulo {
+    font-family: var(--Fonte);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.ConteudoProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    font-size: 12px;
+    background-color: var(--BackGroundColorTelas);
+}
+
+.ProfileUserPhoto {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+}
+
+.ProfilePicDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    flex-grow: 2;
+}
+
+
+
+
+.NomeCompleto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.ProfilePicDivLoading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    flex-grow: 2;
+}
+
+.ProfilePicDiv a {
+    text-decoration: none;
+    color: var(--AzulTexto);
+    margin-top: 10px;
+}
+
+.ProfileForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.rigthSidebarProfile {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.changePasswordDiv {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.workHours {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 207px;
+    padding: 0;
+}
+
+.horariosInput {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.horariosColuna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.phoneDiv {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 207px;
+}
+
+
+
+
+
+
+
+.react-tel-input {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+
+
+}
+
+.ProfileInput {
+    flex-grow: 7;
+    padding: 7px 20px;
+    border: 1px solid var(--InputBorderColor);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--Fonte);
+    font-size: 12px;
+    -webkit-box-shadow: 0px 2px 51px -25px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 2px 51px -25px rgba(0, 0, 0, 1);
+    box-shadow: 0px 2px 51px -25px rgba(0, 0, 0, 1);
+}
+
+.hour {
+    padding: 5px 5px;
+    border: 1px solid var(--InputBorderColor);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--Fonte);
+    font-size: 10px;
+    margin: 0;
+    flex-grow: 1;
+
+}
+
+.ddd {
+    margin: 0;
+    padding: 12px 20px;
+    font-family: var(--Fonte);
+    border: 1px solid var(--InputBorderColor);
+    width: 10px;
+}
+
+
+
+.DoubleColumnProfile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.SelectReactProfile {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--Fonte) !important;
+}
+
+.MensagemSenha {
+    text-align: center;
+    font-family: var(--Fonte);
+    color: var(--TextoInformacao);
+}
+
+.UpdateButton {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+.ProfileButton {
+    background-color: var(--VerdeBotao);
+    color: var(--TextoBotao);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    min-height: 32px;
+    font-family: var(--Fonte);
+    font-size: 12px;
+}
+
+.InputLabelProfile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--AzulTexto) !important;
+    font-family: var(--Fonte);
+    font-weight: 400;
+    gap: 3px;
+}
+
+
+.InputLabelProfile svg {
+    color: var(--AzulTexto) !important;
+}
+
+.SpinnerPerfil {
+    margin-left: 2rem;
+}
+
+.UploadErro {
+    font-family: var(--Fonte);
+    font-weight: 500;
+    color: var(--VermelhoTexto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+.InputLabelProfileHours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--AzulTexto);
+    font-family: var(--Fonte);
+    font-weight: 400;
+    gap: 3px;
+}
+
+h3 {
+    word-wrap: break-word;
+    max-width: 200px;
+    text-align: center;
+}
+
+.SidebarProfile {
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.UpdatedMessage {
+    background-color: var(--VerdeBotao);
+    color: var(--TextoBotao);
+    border: none;
+    padding: 5px 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.Label {
+
+    font-weight: bold;
+    width: 20%;
+}
+
+
+.LabelDiv {
+    width: 100px;
+}
+
+.PhotoInputLabel input {
+    display: none;
+    cursor: pointer;
+}
+
+.PhotoInputLabel {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--AzulTexto);
+    margin-top: 5px;
+    font-family: var(--Fonte);
+}
+
+.PhotoInputLabelRemove {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--VermelhoTexto);
+    font-family: var(--Fonte);
+}
+
+.upload {
+    background-color: var(--VerdeBotao);
+    color: var(--TextoBotao);
+    border: none;
+    cursor: pointer;
+    font-family: var(--Fonte);
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 9px;
+    -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+
+
+
+.UploadButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    margin-top: 1rem;
+}
+
+
+
+.uploadCancel {
+    background-color: var(--VermelhoTexto);
+    color: var(--TextoBotao);
+    border: none;
+    cursor: pointer;
+    font-family: var(--Fonte);
+    font-size: 9px;
+    border-radius: 4px;
+    padding: 5px 15px;
+    -webkit-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 11px 10px -10px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.UpdatindLoading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: var(--Fonte);
+    margin-right: 2rem;
+}
+
+
+@media (max-width: 1200px) {
+
+    .ConteudoProfile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .rigthSidebarProfile {
+
+        margin-top: 20px;
+    }
+
+    .phoneDiv {
+        width: 100%;
+    }
+
+
+    .PasswordAndPhone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+
+    .ConteudoProfile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ProfileUserPhoto {
+        width: 150px;
+        height: 150px;
+        margin: 30px;
+        border-radius: 50%;
+    }
+
+    .ProfileForm {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .NomeCompleto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 15px;
+        flex-grow: 1;
+    }
+
+    .SidebarProfile {
+        width: 100%;
+    }
+
+    .ProfilePicDiv {
+        margin: 0;
+    }
+
+    .rigthSidebarProfile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+
+    .changePasswordDiv {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .changePasswordDiv input {
+
+        flex-grow: 1;
+    }
+
+    .UpdateButton {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ProfileButton {
+        width: 100%;
+    }
+
+    .PasswordAndPhone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workHours {
+        width: 100%;
+    }
+
+
+}

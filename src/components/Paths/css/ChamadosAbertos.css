@@ -1,0 +1,20 @@
+.ChamadosAbertos {
+  height: 100vh;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.ChamadosAbertos h2 {
+  font-family: var(--Fonte);
+
+}
+
+
+@media (max-width: 800px) {
+
+  .ChamadosAbertos {
+    padding: 0.7rem;
+  }
+
+
+}

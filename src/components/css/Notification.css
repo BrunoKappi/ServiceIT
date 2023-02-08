@@ -1,0 +1,48 @@
+.Notification {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+
+}
+
+
+.NotificationBody {
+    font-family: var(--Fonte) !important;
+    font-weight: 400;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    min-width: 300px;
+    justify-content: space-between;
+}
+
+.NotificationBody span {
+    color: black;
+    font-family: var(--Fonte) !important;
+}
+
+.NotificationBody svg {
+    color: black;
+    cursor: pointer;
+}
+
+
+.NotificationHidden {
+    height: 0px;
+    -webkit-transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear;
+    -ms-transition: height 0.5s linear;
+    -o-transition: height 0.5s linear;
+    transition: height 0.5s linear;
+}
+
+.NotificationHidden.NotificationOpen {
+    height: 80px;
+    -webkit-transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear;
+    -ms-transition: height 0.5s linear;
+    -o-transition: height 0.5s linear;
+    transition: height 0.5s linear;
+}

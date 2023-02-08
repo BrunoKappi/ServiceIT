@@ -1,0 +1,21 @@
+.Dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+    font-family: var(--Fonte);
+}
+
+.Dashboard p{
+  font-family: var(--Fonte);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.Dashboard img {
+  max-width: 90%;
+  width: 80%;
+}
